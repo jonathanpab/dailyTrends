@@ -12,3 +12,10 @@ I'm going to divide the structure in layers usind Domain driven design
 #### Note: 
 This is a simple skeleton, it doesn't have any library or dependency yet. 
 It will be configured later.
+
+### Adding docker compose to start mongo db
+
+Execute it to start docker
+`docker-compose up -d`
+Check the list of dockers
+`docker ps`

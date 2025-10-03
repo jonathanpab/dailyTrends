@@ -1,0 +1,13 @@
+services:
+  mongo:
+    image: mongo:8
+    container_name: daily_trends_mongo
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    environment:
+      MONGO_INITDB_DATABASE: daily_feed_db
+volumes:
+  mongo_data:
