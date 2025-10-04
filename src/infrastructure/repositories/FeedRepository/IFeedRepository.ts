@@ -1,7 +1,9 @@
 import {IFeed} from "src/domain/models/IFeed";
-import {FeedDocument} from "src/infrastructure/database/Feed";
+import {FeedDocument} from "src/infrastructure/database/FeedSchema";
 
 export interface IFeedRepository {
+    createBatch(data: IFeed[]): Promise<FeedDocument[]>;
+
     create(data: IFeed): Promise<FeedDocument>;
 
     findAll(): Promise<FeedDocument[]>;

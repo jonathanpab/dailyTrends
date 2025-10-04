@@ -22,8 +22,16 @@ Check the list of dockers
 
 ### Adding feed model and test for connection and repository
 I have added IFeed as Interface with the fields that news item should have  
-Also I have added the database schema (Feed.ts) and the repository with 
-its correspondent interface
+Also I have added the database schema (FeedSchema.ts) and the repository with 
+its correspondent interface.  
 Besides, mongodb-memory-server and jest libraries to test the model and 
 how it will be saved into the mongodb. Mongodb-memory-server acts like a 
 database without make changes in the real db.
+
+### Adding endpoints to the project
+- Adding tslog for avoid to use console log and set a level for logging  
+- Adding dotenv to allow get environment config from other places 
+(now env is commited because is a test, but it is a known error)
+- Adding module-alias library to allow to define custom path aliases for the 
+project modules, instead of writing long relative paths  
+- Create the endpoints that allow to create and get news to the feed
