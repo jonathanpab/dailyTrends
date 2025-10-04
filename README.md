@@ -19,3 +19,11 @@ Execute it to start docker
 `docker-compose up -d`
 Check the list of dockers
 `docker ps`
+
+### Adding feed model and test for connection and repository
+I have added IFeed as Interface with the fields that news item should have  
+Also I have added the database schema (Feed.ts) and the repository with 
+its correspondent interface
+Besides, mongodb-memory-server and jest libraries to test the model and 
+how it will be saved into the mongodb. Mongodb-memory-server acts like a 
+database without make changes in the real db.
