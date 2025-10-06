@@ -35,3 +35,8 @@ database without make changes in the real db.
 - Adding module-alias library to allow to define custom path aliases for the 
 project modules, instead of writing long relative paths  
 - Create the endpoints that allow to create and get news to the feed
+
+### Adding scrappers to get news
+- Adding axios for requests (I tried to use got, but it requires change the style format to EMS) 
+and cheerio for parse and find elements using jquery style
+- Adding scrapers for El mundo and El país, both inherit from BaseScraper that has common methods
