@@ -40,3 +40,8 @@ project modules, instead of writing long relative paths
 - Adding axios for requests (I tried to use got, but it requires change the style format to EMS) 
 and cheerio for parse and find elements using jquery style
 - Adding scrapers for El mundo and El país, both inherit from BaseScraper that has common methods
+
+### Adding cron job to execute scrapers daily
+- Adding node-cron library
+- Create Service for scraping and save info into database
+- Add Cron file to execute daily

@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 import feedRoutes from './application/routes/FeedRoutes';
 import {logger} from './utils/logger';
+import 'src/config/fetch-news-cron';
 
 dotenv.config();
 
